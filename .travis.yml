@@ -29,6 +29,7 @@ script:
   - cd backend
   - npm test
   - cd ..
+  - npm install caniuse-lite@latest --save
   - npm run test
   - npm run build
 #deploy:
