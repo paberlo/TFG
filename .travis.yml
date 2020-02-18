@@ -20,7 +20,6 @@ cache:
 before_script:
   - npm install -g @angular/cli
   - npm ci
-  - npm update
   - npm install --save-dev karma-jasmine-html-reporter@1.5.2
   - npm update
   - cd backend
