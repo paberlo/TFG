@@ -4,7 +4,11 @@ node_js:
 dist: trusty
 sudo: true
 addons:
-  chrome: stable
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 branches:
   only:
     - tests_sin_funcionar
