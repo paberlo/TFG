@@ -24,7 +24,7 @@ module.exports = function(config) {
       outputDir: path.join(__dirname, './reports/junit/'),
       outputFile: 'TESTS-xunit.xml',
       useBrowserName: false,
-      suite: '' // Will become the package name attribute in xml testsuite element
+      suite: '' //  Will become the package name attribute in xml testsuite element
     },
     coverageIstanbulReporter: {
       reports: ['html', 'lcovonly', 'text-summary'],
