@@ -47,6 +47,6 @@ module.exports = function(config) {
     },*/
     singleRun: false,
     restartOnFileChange: true,
-    concurrency: 1
+    concurrency: Infinity //es el por defecto
   });
 };
