@@ -1,9 +1,10 @@
 language: node_js
 node_js:
   - 12.5.0
-dist: xenial
+#dist: xenial
+os: windows
 addons:
-  firefox: latest
+  chrome: stable
 branches:
   only:
     - tests_sin_funcionar
