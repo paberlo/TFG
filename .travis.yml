@@ -4,7 +4,7 @@ node_js:
 #dist: xenial
 os: windows
 addons:
-  chrome: stable
+  firefox: latest
 branches:
   only:
     - tests_sin_funcionar
