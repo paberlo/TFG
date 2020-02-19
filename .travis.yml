@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 13.9.0
+  - 12.5.0
 dist: xenial
 addons:
   firefox: latest
@@ -22,8 +22,6 @@ before_script:
   - npm i jasmine-core@3.5
   - npm i karma-firefox-launcher
   - npm ci
-  #- npm update
-  #- npm install --save-dev karma-jasmine-html-reporter@1.5.2
   - cd backend
   - npm ci
   - cd ..
