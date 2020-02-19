@@ -1,8 +1,8 @@
 language: node_js
 node_js:
   - 12.5.0
-#dist: xenial
-os: windows
+dist: xenial
+#os: windows
 addons:
   firefox: latest
 branches:
