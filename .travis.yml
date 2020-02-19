@@ -19,9 +19,11 @@ cache:
     - node_modules
 before_script:
   - npm install -g @angular/cli
+  - npm i caniuse-lite@latest
+  - npm i jasmine-core@3.5
   - npm ci
-  - npm install --save-dev karma-jasmine-html-reporter@1.5.2
-  - npm update
+  #- npm update
+  #- npm install --save-dev karma-jasmine-html-reporter@1.5.2
   - cd backend
   - npm ci
   - cd ..
