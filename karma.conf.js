@@ -10,6 +10,7 @@ module.exports = function(config) {
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
+      require('karma-firefox-launcher'),
       require('karma-chrome-launcher'),
       require('karma-junit-reporter'),
       require('karma-coverage-istanbul-reporter'),
@@ -36,14 +37,14 @@ module.exports = function(config) {
     // Level of logging, can be: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadless'],
+    browsers: ['FirefoxHeadless'],
     //browsers: ['Chrome-headless'],
-    customLaunchers: {
-      ChromeHeadlessNoSandbox: {
-        base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
+    /*customLaunchers: {
+      FirefoxHeadless: {
+        base: 'Firefox',
+        flags: ['-headless,--no-sandbox']
       }
-    },
+    },*/
     singleRun: false,
     restartOnFileChange: true
   });

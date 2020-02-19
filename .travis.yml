@@ -4,7 +4,7 @@ node_js:
 dist: trusty
 sudo: true
 addons:
-  chrome: stable
+  firefox: latest
 branches:
   only:
     - tests_sin_funcionar
@@ -21,6 +21,7 @@ before_script:
   - npm install -g @angular/cli
   - npm i caniuse-lite@latest
   - npm i jasmine-core@3.5
+  - npm i karma-firefox-launcher
   - npm ci
   #- npm update
   #- npm install --save-dev karma-jasmine-html-reporter@1.5.2
@@ -31,8 +32,7 @@ script:
   - cd backend
   - npm test
   - cd ..
-  - npm install caniuse-lite@latest --save
-  - npm run test --watch=false  --browsers=ChromeHeadlessNoSandbox
+  - npm run test --watch=false  --browsers=FirefoxHeadless
   - npm run build
 #deploy:
 # provider: heroku
